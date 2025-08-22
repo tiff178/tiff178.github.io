@@ -153,6 +153,43 @@ nav {
   object-fit: cover;
 }
 
+@media screen and (max-width: 600px) {
+  /* Hero section stacks vertically */
+  .hero {
+    flex-direction: column;   /* stack profile + text */
+    height: auto;             /* let it grow naturally */
+    padding: 20px;
+    text-align: center;       /* center everything */
+  }
+
+  /* Profile picture shrinks on mobile */
+  .pfp {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;      /* space under the image */
+  }
+
+  /* Make text blocks full width */
+  .about, .intro {
+    width: 100%;              /* no more 30% columns */
+    margin-bottom: 20px;
+  }
+
+  /* Adjust heading sizes */
+  .intro h1 {
+    font-size: 1.5rem;        /* smaller than desktop */
+  }
+
+  .about h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Optional: shrink nav spacing */
+  .nav-links li {
+    margin-left: 10px;
+  }
+}
+
 .intro h1 {
   font-size: 2rem;
   color: var(--primary-color);
