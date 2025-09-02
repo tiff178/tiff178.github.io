@@ -17,6 +17,10 @@
   --accent-color: #0071ff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* === Global Styles === */
 body {
   font-family: 'Courier New', monospace;
